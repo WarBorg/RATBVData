@@ -23,7 +23,7 @@ namespace RATBVData.Models.Models
         public string Direction { get; set; }
 
         [JsonProperty("schedualLink")]
-        public string SchedualLink { get; set; }
+        public string ScheduleLink { get; set; }
 
         [JsonIgnore]
         public string LastUpdateDate { get; set; }
