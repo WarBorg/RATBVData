@@ -16,20 +16,20 @@ namespace RATBVData.Models.Models
         public int BusLineId { get; set; }
 
         [JsonProperty("name")]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         // TODO check this property if it is still needed
         [JsonProperty("direction")]
-        public string Direction { get; set; }
+        public string Direction { get; set; } = default!;
 
         [JsonProperty("schedualLink")]
-        public string ScheduleLink { get; set; }
+        public string ScheduleLink { get; set; } = default!;
 
         [JsonIgnore]
-        public string LastUpdateDate { get; set; }
+        public string LastUpdateDate { get; set; } = string.Empty;
 
         [JsonIgnore]
         [OneToMany(CascadeOperations = CascadeOperation.All)]
-        public List<BusTimeTableModel> BusTimeTables { get; set; }
+        public List<BusTimeTableModel>? BusTimeTables { get; set; }
     }
 }

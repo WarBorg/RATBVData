@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using RATBVData.Models.Enums;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
 
@@ -16,15 +15,15 @@ namespace RATBVData.Models.Models
         public int BusStationId { get; set; }
 
         [JsonProperty("hour")]
-        public string Hour { get; set; }
+        public string Hour { get; set; } = string.Empty;
 
         [JsonProperty("minutes")]
-        public string Minutes { get; set; }
+        public string Minutes { get; set; } = string.Empty;
 
         [JsonProperty("timeOfWeek")]
-        public string TimeOfWeek { get; set; }
+        public string TimeOfWeek { get; set; } = string.Empty;
 
         [JsonIgnore]
-        public string LastUpdateDate { get; set; }
+        public string LastUpdateDate { get; set; } = string.Empty;
     }
 }

@@ -7,6 +7,7 @@
     <Authors>WarBorg</Authors>
     <Owners>WarBorg</Owners>
     <Description>NuGet for sharing data between RATBV webservice and mobile app projects</Description>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">

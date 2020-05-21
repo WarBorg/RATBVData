@@ -12,29 +12,29 @@ namespace RATBVData.Models.Models
         public int Id { get; set; }
 
         [JsonProperty("name")]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [JsonProperty("route")]
-        public string Route { get; set; }
+        public string Route { get; set; } = string.Empty;
 
         [JsonProperty("type")]
-        public string Type { get; set; }
+        public string Type { get; set; } = default!;
 
         // TODO check this property if we still need it
         [JsonProperty("color")]
-        public string Color { get; set; }
+        public string Color { get; set; } = string.Empty;
 
         [JsonProperty("linkNormalWay")]
-        public string LinkNormalWay { get; set; }
+        public string LinkNormalWay { get; set; } = default!;
 
         [JsonProperty("linkReverseWay")]
-        public string LinkReverseWay { get; set; }
+        public string LinkReverseWay { get; set; } = default!;
 
         [JsonIgnore]
-        public string LastUpdateDate { get; set; }
+        public string LastUpdateDate { get; set; } = string.Empty;
 
         [JsonIgnore]
         [OneToMany(CascadeOperations = CascadeOperation.All)]
-        public List<BusStationModel> BusStations { get; set; }
+        public List<BusStationModel>? BusStations { get; set; }
     }
 }
