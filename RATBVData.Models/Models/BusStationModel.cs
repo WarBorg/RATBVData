@@ -22,7 +22,7 @@ namespace RATBVData.Models.Models
         [JsonProperty("direction")]
         public string Direction { get; set; } = default!;
 
-        [JsonProperty("schedualLink")]
+        [JsonProperty("scheduleLink")]
         public string ScheduleLink { get; set; } = default!;
 
         [JsonIgnore]
