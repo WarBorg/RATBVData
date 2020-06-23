@@ -9,7 +9,7 @@ namespace RATBVData.Models.Models
     {
         [JsonIgnore]
         [PrimaryKey, AutoIncrement]
-        public int? Id { get; set; } // without nullable on Id, InsertOrReplace will not autoincrement the Id
+        public int? Id { get; set; } // Without nullable on Id, InsertOrReplace will not autoincrement the Id
 
         [JsonIgnore]
         [ForeignKey(typeof(BusLineModel))]
